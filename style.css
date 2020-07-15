@@ -7,13 +7,16 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  opacity: 0;
+}
 ::-webkit-scrollbar {
   display: none;
 }
 ::-webkit-scrollbar-button {
   display: none;
 }
-#socialicon{
+#socialicon {
   width: 100%;
 }
 #logo2 {
@@ -34,7 +37,7 @@ body {
   background-color: rgba(0, 140, 255, 0.1);
   border-radius: 50px;
 }
-#wwu{
+#wwu {
   background-color: rgb(0, 0, 0);
   color: white;
   border-radius: 50px;
@@ -61,7 +64,7 @@ body {
 #fom:focus {
   background-color: rgb(243, 243, 243);
 }
-#logo3{
+#logo3 {
   width: 25%;
 }
 #topnav {
@@ -130,19 +133,19 @@ body {
 }
 #a1 {
   filter: brightness(35%);
+  height: 700px;
+  width: 100vw auto;
 }
 
 #trendcards {
   height: 350px;
 
-  background: url(https://images.unsplash.com/photo-1594032257107-9aa9bb3849c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
-  background-size: cover;
+  
 }
 #trendcards2 {
   height: 120px;
   width: 100%;
-  background: url(https://images.unsplash.com/photo-1594032257107-9aa9bb3849c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
-  background-size: cover;
+  
 }
 #trendcards .h2 {
   margin-top: 20%;
@@ -167,6 +170,11 @@ body {
     rgba(194, 87, 0, 0.281),
     rgba(0, 0, 0, 0.664)
   );
+  height: 100%;
+}
+#zed {
+  border-radius: 10px;
+  background-size: cover;
   height: 100%;
 }
 #z2 {
@@ -227,18 +235,15 @@ body {
 }
 #latest3 {
   height: 585px;
-  background: url(https://images.unsplash.com/photo-1593876037475-3d9bb68a3874?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
-  background-size: cover;
+  
 }
 #latest1 {
   height: 400px;
-  background: url(https://images.unsplash.com/photo-1593642532871-8b12e02d091c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80);
-  background-size: cover;
+  
 }
 #latest2 {
-  height: 150px;
-  background: url(https://images.unsplash.com/photo-1594008037842-11fe03ea82af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
-  background-size: cover;
+  height: auto;
+  
 }
 
 ul li {
@@ -284,6 +289,9 @@ ul li {
 
   border-radius: 10px;
 }
+#carad {
+  display: none;
+}
 
 /*media quaries*/
 
@@ -298,58 +306,56 @@ ul li {
   .carousel-item {
     height: auto;
   }
-  #navbarnav{
+  #navbarnav {
     height: 100vh;
   }
- #mobilemenu{
-   background: rgba(255, 255, 255, 0);
-   box-shadow: none;
-   color: black;
-   padding: 0 0 0 15px;
- }
- #mobmen{
-   background-image: url(./img/button.svg);
-   
-   width: 3em;
-   height: 3em;
- }
- #mobmen::after{
-  background-image: url(/totell-e1559974619203.png);
-}
-#icon2nav{
-  display: flex;
-  justify-content: center;
-  
-  margin: 25vh 0 0 0;
-  padding: 0;
-  text-align: center;
-}
-#icon2nav i{
-  margin: 5px;
-  padding: 0;
-  justify-content: center;
-  
-}
-#socialicon{
-  width: 100%;
-}
-#iconrowbot{
-  justify-content: center;
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 10vh;
-}
-#iconrowbot i{
-  margin: 0px;
-  padding: 0;
-}
-#iconrowbot a{
-  justify-content: center;
-  padding: 0;
-}
+  #mobilemenu {
+    background: rgba(255, 255, 255, 0);
+    box-shadow: none;
+    color: black;
+    padding: 0 0 0 15px;
+  }
+  #mobmen {
+    background-image: url(./img/button.svg);
+
+    width: 3em;
+    height: 3em;
+  }
+  #mobmen::after {
+    background-image: url(/totell-e1559974619203.png);
+  }
+  #icon2nav {
+    display: flex;
+    justify-content: center;
+
+    margin: 25vh 0 0 0;
+    padding: 0;
+    text-align: center;
+  }
+  #icon2nav i {
+    margin: 5px;
+    padding: 0;
+    justify-content: center;
+  }
+  #socialicon {
+    width: 100%;
+  }
+  #iconrowbot {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10vh;
+  }
+  #iconrowbot i {
+    margin: 0px;
+    padding: 0;
+  }
+  #iconrowbot a {
+    justify-content: center;
+    padding: 0;
+  }
 }
 @media only screen and (max-width: 767px) {
-
   #trendcards2 {
     height: 150px !important;
     width: 100%;
@@ -361,6 +367,9 @@ ul li {
   .card-body {
     position: absolute;
     top: 1px !important;
+  }
+  #a1{
+    height: 100vh;
   }
   #para1 {
     font-size: 15px !important;
@@ -432,7 +441,7 @@ ul li {
   #iconsbot {
     text-align: center;
   }
-  #socialicon{
+  #socialicon {
     width: 100%;
   }
   #latest1 h2,
@@ -453,13 +462,28 @@ ul li {
     padding: 0;
     justify-content: center;
   }
-  .breadcrumb{
+  .breadcrumb {
     font-size: 15px;
   }
-  #tnc{
+  #tnc {
     font-size: 15px;
     margin: 0;
     padding: 0;
     text-decoration: none;
+  }
+  #bigadd {
+    display: none;
+  }
+  #carad {
+    display: inline-block;
+  }
+
+  .carousel .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  .carousel-indicators{
+    opacity: 0.1;
   }
 }
