@@ -134,7 +134,9 @@ body {
 #a1 {
   filter: brightness(35%);
   height: 700px;
-  width: 100vw auto;
+  min-width: 100vw;
+  width: auto;
+
 }
 
 #trendcards {
