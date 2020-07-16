@@ -134,8 +134,8 @@ body {
 #a1 {
   filter: brightness(35%);
   height: 700px;
-  min-width: 100vw;
-  width: auto;
+  overflow-y: hidden;
+  width: 100vw;
 
 }
 
@@ -372,6 +372,7 @@ ul li {
   }
   #a1{
     height: 100vh;
+    width: auto;
   }
   #para1 {
     font-size: 15px !important;
