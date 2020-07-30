@@ -29,16 +29,19 @@
     <style></style>
   </head>
   <body>
+    
     <!-- Start your project here-->
+   
 <div class="container-fluid bg-dark">
   <a href="">
           <img src="./img/totell-e1559974619203.png" id="logo" alt="">
         </a>
     <nav class="navbar navbar-light fixed-top navbar-expand-sm"  id="topnav">
         
-        <form class="form-inline">
+        <form class="form-inline" style="display: flex;flex-direction: row;">
           <input class="form mr-sm-2" id="fom" type="search" placeholder="Search" aria-label="Search">
         
+          <i class="fa fa-search fa-2x" id="searchbutton" aria-hidden="true"></i>
         </form>
       </nav>
   
@@ -55,7 +58,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             
-              <a href="">
+              <a href="" >
 
                 <img
                   src="https://source.unsplash.com/1600x1600/?nature,water"
@@ -136,12 +139,16 @@
    
     <!--Navbar-->
     
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark primary-color " id="a">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark primary-color mt-3 " id="a">
       <button class="navbar-toggler btn" id="mobilemenu" type="button" data-toggle="collapse" data-target="#navbarnav">
         <span class="navbar-toggler-icon ml-auto " id="mobmen"></span>                
       </button>
       <div class="collapse navbar-collapse" id="navbarnav">
         <img src="./img/totell-e1559974619203.png" alt="" id="logo2" />
+        
+          
+          
+        
         <ul class="navbar-nav m-auto p-2">
           <li class="nav-item px-3 active">
             <a href="#" class="nav-link">SNEAK-PEAK</a>
@@ -156,7 +163,26 @@
             <a href="#e" class="nav-link"> TRENDS</a>
           </li>
           <li class="nav-item px-3">
-            <a id="wwu" href="#e" class="nav-link"><p style="margin: 0 10px 0 10px;padding: 0;color: white;font-weight: 500;">WRITE WITH US</p></a>
+            <a href="#e" class="nav-link">WRITE WITH US</a>
+          </li>
+          
+          
+          <li class="nav-item px-3" id="hiuser">
+            <!--Dropdown primary-->
+              <div class="dropdown rounded-pill">
+
+                <!--Trigger-->
+                <button class="btn btn-dark dropdown-toggle rounded-pill " type="button" id="dropdownMenu1" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">Connect with Us</button>
+
+                <!--Menu-->
+                <div class="dropdown-menu dropdown-primary">
+                  <a class="dropdown-item" href="#">login</a>
+                  <a class="dropdown-item" href="#">Register</a>
+                  
+                </div>
+              </div>
+            <!--/Dropdown primary-->
           </li>
         </ul>
 
@@ -370,41 +396,7 @@
 
         <div class="row  ">
 
-          <div class="col-md-4">
-            <a href="">
-
-              <div class="card-text-center">
-                <div class="card body " id="latest1" style="background: url(https://images.unsplash.com/photo-1593642532871-8b12e02d091c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80);
-                background-size: cover;">
-                  <div class="" id="latest11">
-                    <h2>Heading</h2>
-                    <p>date-month-year</p>
-                  </div>
-                 
-              </div>
-              </div>
-            </a>
-
-
-            <div class="row mt-3">
-              <a href="">
-
-                <div class="col-12 ">
-                  <div class="card-text-center">
-                    <div class="card body " id="latest2" style="background: url(https://images.unsplash.com/photo-1594008037842-11fe03ea82af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
-                    background-size: cover;" >
-                      <div class="" id="latest11">
-                        <h2>top 10 cafes in agartala you should visit atleast once</h2> 
-                        <p>date-month-year</p>
-                      </div>
-                    
-                  </div>
-                  </div>
-                </div>
-              </a>
-            </div>   
-
-          </div>
+          
           
           <div class="col-md-8 " id="">
             <a href="">
@@ -422,7 +414,41 @@
                 
                 
           </div>
-              
+          <div class="col-md-4">
+            <a href="">
+
+              <div class="card-text-center">
+                <div class="card body " id="latest1" style="background: url(https://images.unsplash.com/photo-1593642532871-8b12e02d091c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80);
+                background-size: cover;">
+                  <div class="" id="latest11">
+                    <h2>top 10 cafes in agartala you should visit atleast once  you should visit atleast once  you should visit atleast once</h2> 
+                    <p>date-month-year</p>
+                  </div>
+                 
+              </div>
+              </div>
+            </a>
+
+
+            <div class="row mt-3">
+              <a href="">
+
+                <div class="col-12 ">
+                  <div class="card-text-center">
+                    <div class="card body " id="latest2" style="background: url(https://images.unsplash.com/photo-1594008037842-11fe03ea82af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+                    background-size: cover;" >
+                      <div class="" id="latest11">
+                        <h2>top 10 cafes in agartala you should visit atleast once  you should visit atleast once  you should visit atleast once</h2> 
+                        <p>date-month-year</p>
+                      </div>
+                    
+                  </div>
+                  </div>
+                </div>
+              </a>
+            </div>   
+
+          </div>
             
         </div>
             </div>
